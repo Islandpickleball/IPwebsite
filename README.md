@@ -1,6 +1,10 @@
 # islandpickleball.org
 
 Static site. Edit `index.html` (content), `style.css` (styling), `images/` (photos).
+
+Photo captions: every photo sits in a `<figure>` with a `<figcaption>`. Look for the
+`<!-- CAPTION — edit the text between the tags below -->` comment and change the words
+inside `<figcaption>...</figcaption>`. Nothing else needs touching.
 No build step — open index.html locally to preview.
 
 ## Hosting via GitHub Pages
@@ -26,7 +30,7 @@ Delete existing A / CNAME records that point to Squarespace site hosting, then a
 Keep any MX / email records untouched. DNS can take 15 minutes to a few hours.
 
 ## Contact form
-The form posts to formsubmit.co, which emails submissions to davekspace@gmail.com.
+The form posts to formsubmit.co, which emails submissions to info@islandpickleball.org.
 Activate it once: submit the form yourself after the site is live and click the
 confirmation link in the email formsubmit.co sends. To change the destination address,
 edit the `action` URL in index.html.
