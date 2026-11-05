@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Island Pickleball Escapes — Hosted Pickleball Getaways</title>
+  <meta name="description" content="Island Pickleball — courts, coaching, youth academy, tournaments, and getaways in the San Juan Islands.">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.svg">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="./index.html">
+        <svg class="brand__mark" width="34" height="34" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="14.5" fill="var(--color-accent)"/>
+          <circle cx="16" cy="16" r="14.5" fill="none" stroke="var(--color-primary)" stroke-width="1.4"/>
+          <circle cx="11" cy="11" r="1.7" fill="var(--color-primary)"/>
+          <circle cx="21" cy="11" r="1.7" fill="var(--color-primary)"/>
+          <circle cx="16" cy="16" r="1.7" fill="var(--color-primary)"/>
+          <circle cx="11" cy="21" r="1.7" fill="var(--color-primary)"/>
+          <circle cx="21" cy="21" r="1.7" fill="var(--color-primary)"/>
+        </svg>
+        <span class="brand__name">Island Pickleball<small>San Juan Islands, WA</small></span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list" role="list">
+          <li><a class="nav__link" href="courts.html">Courts</a></li>
+          <li><a class="nav__link" href="academy.html">Academy</a></li>
+          <li><a class="nav__link" href="coaching.html">Coaching</a></li>
+          <li><a class="nav__link" href="tournaments.html">Tournaments</a></li>
+          <li><a class="nav__link" href="escapes.html" aria-current="page">Escapes</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+          <li><a class="btn btn--accent nav__cta" href="./escapes.html">Join</a></li>
+        </ul>
+      </nav>
+      <button class="burger" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="container mobile-nav" data-open="false">
+      <ul class="mobile-nav__list" role="list">
+        <li><a class="mobile-nav__link" href="courts.html">Courts</a></li>
+        <li><a class="mobile-nav__link" href="academy.html">Academy</a></li>
+        <li><a class="mobile-nav__link" href="coaching.html">Coaching</a></li>
+        <li><a class="mobile-nav__link" href="tournaments.html">Tournaments</a></li>
+        <li><a class="mobile-nav__link" href="escapes.html" aria-current="page">Escapes</a></li>
+        <li><a class="mobile-nav__link" href="about.html">About</a></li>
+        <li><a class="mobile-nav__link" href="contact.html">Contact</a></li>
+        <li><a class="mobile-nav__link" href="./escapes.html"><strong>Join</strong></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker">Island Pickleball Escapes</p>
+        <h1 class="page-hero__title">Great games. Exceptional getaways.</h1>
+        <p class="page-hero__lede">Hosted pickleball travel experiences from Island Pickleball — in planning now.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container stack stack--lg">
+        <div class="center">
+          <p class="kicker">In planning — be first in line</p>
+          <h2 style="font-size: var(--text-xl); max-width: 30ch; margin-inline: auto;">The trip where your game comes along</h2>
+          <p class="lede" style="margin-inline: auto;">Small groups. Real coaching. Great courts in places worth traveling to — and good company the whole way. Our first escapes are taking shape now.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <p class="card__title">What we're exploring</p>
+            <p>A winter desert escape — think warm-weather courts, morning clinics, and round robins under the sun. Full itinerary, pricing, and partners confirmed before bookings open.</p>
+          </div>
+          <div class="card">
+            <p class="card__title">How it will work</p>
+            <p>Coaching built into the trip: skills sessions in the morning, structured match play after, and a coach on court with you — the Three-and-Me approach, on the road.</p>
+          </div>
+          <div class="card">
+            <p class="card__title">Who it's for</p>
+            <p>Players who want more than court time — a hosted experience with the island crew's standards: organized, welcoming, and competitive without taking itself too seriously.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--deep" id="interest">
+      <div class="container center">
+        <p class="kicker">The interest list</p>
+        <h2 style="font-size: var(--text-xl);">Join the interest list</h2>
+        <p class="lede" style="margin-inline: auto; margin-bottom: var(--space-8);">Interest-list members hear first when dates, venues, and pricing are confirmed — and get first shot at the limited spots.</p>
+        <form class="form" data-service="escapes" style="margin-inline: auto; text-align: left;">
+          <div class="form__pending" role="status">Sending…</div>
+          <div class="form__success" role="status">You're on the interest list — you'll hear from us the moment there's something real to book.</div>
+          <div class="form__error" role="alert">Something went wrong — please try again, or email info@islandpickleball.org.</div>
+          <div class="form__unconfigured" role="alert">This form isn't connected yet — we're finishing setup. Email info@islandpickleball.org to join the list.</div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
+          <div class="form__row form__row--2">
+            <div class="field"><label for="e-name">Name</label><input id="e-name" type="text" required name="e-name"></div>
+            <div class="field"><label for="e-email">Email</label><input id="e-email" type="email" required name="e-email"></div>
+          </div>
+          <div class="field"><label for="e-level">Your comfort level on court</label>
+            <select id="e-level" required name="e-level">
+              <option>Newer player — still building fundamentals</option>
+              <option>Comfortable in recreational games</option>
+              <option>Club / league regular</option>
+              <option>Tournament competitor</option>
+            </select>
+          </div>
+          <div class="field"><label for="e-travel">What kind of trip interests you most?</label><textarea id="e-travel" rows="3" placeholder="Destination ideas, trip length, who you'd bring…" name="e-travel"></textarea></div>
+          <button class="btn btn--accent btn--lg" type="submit">Join the Interest List</button>
+          <p class="form__note" style="color: color-mix(in oklab, var(--color-text-inverse) 65%, transparent);">No spam, no fake scarcity — just a note when there's something real to book.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand-name">Island Pickleball</p>
+          <p class="footer__motto">Play hard. Be kind.</p>
+          <p style="font-size: var(--text-sm); margin-top: var(--space-4);">San Juan Islands, Washington</p>
+        </div>
+        <div>
+          <h3>Programs</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="./courts.html">Courts</a></li>
+            <li><a href="./academy.html">Academy</a></li>
+            <li><a href="./coaching.html">Coaching</a></li>
+            <li><a href="./tournaments.html">Tournaments</a></li>
+            <li><a href="./escapes.html">Escapes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="tel:+13606050634">Call or text (360) 605-0634</a></li>
+            <li><a href="mailto:info@islandpickleball.org">info@islandpickleball.org</a></li>
+            <li><a href="./contact.html">Contact page</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Safe & verified</h3>
+          <ul class="footer__links" role="list">
+            <li>PPR Certified Coach</li>
+            <li>Background-checked annually</li>
+            <li>National Sports ID Verified</li>
+            <li>USA Pickleball member</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© Island Pickleball. All rights reserved.</span>
+        <span>Courts built for better play.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
