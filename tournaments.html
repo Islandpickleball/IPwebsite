@@ -124,11 +124,15 @@
         <p class="kicker">Stay in the loop</p>
         <h2 style="font-size: var(--text-xl);">Get notified about island tournaments</h2>
         <p class="lede" style="margin-inline: auto; margin-bottom: var(--space-8);">Event announcements, registration windows, and division info — straight to your inbox.</p>
-        <form class="form" data-proto style="margin-inline: auto; text-align: left;">
-          <div class="form__success" role="status"><strong>Prototype note:</strong> connects to your email list with interest tags (tournament players).</div>
+        <form class="form" data-service="tournament" style="margin-inline: auto; text-align: left;">
+          <div class="form__pending" role="status">Sending…</div>
+          <div class="form__success" role="status">You're on the list — event announcements and registration windows will land in your inbox first.</div>
+          <div class="form__error" role="alert">Something went wrong — please try again, or email info@islandpickleball.org.</div>
+          <div class="form__unconfigured" role="alert">This form isn't connected yet — we're finishing setup. Email info@islandpickleball.org and we'll keep you posted.</div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
           <div class="form__row form__row--2">
-            <div class="field"><label for="t-name">Name</label><input id="t-name" type="text" required></div>
-            <div class="field"><label for="t-email">Email</label><input id="t-email" type="email" required></div>
+            <div class="field"><label for="t-name">Name</label><input id="t-name" type="text" required name="t-name"></div>
+            <div class="field"><label for="t-email">Email</label><input id="t-email" type="email" required name="t-email"></div>
           </div>
           <button class="btn btn--primary btn--lg" type="submit">Notify Me</button>
         </form>

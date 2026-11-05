@@ -129,14 +129,18 @@
         <p class="kicker">Booking</p>
         <h2 style="font-size: var(--text-xl);">Get on the calendar</h2>
         <p class="lede" style="margin-inline: auto; margin-bottom: var(--space-8);">Tell us what you're working on and when works — we'll confirm your session by text.</p>
-        <form class="form" data-proto style="margin-inline: auto; text-align: left;">
-          <div class="form__success" role="status"><strong>Prototype note:</strong> the live site plugs into a real-time booking calendar with instant confirmations.</div>
+        <form class="form" data-service="coaching" style="margin-inline: auto; text-align: left;">
+          <div class="form__pending" role="status">Sending…</div>
+          <div class="form__success" role="status">Thanks — we got your lesson request and will confirm your session by text. Eager to get on court sooner? Call or text (360) 605-0634.</div>
+          <div class="form__error" role="alert">Something went wrong sending your request — please try again, or call or text (360) 605-0634.</div>
+          <div class="form__unconfigured" role="alert">This form isn't connected yet — we're finishing setup. Call or text (360) 605-0634 to book directly.</div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
           <div class="form__row form__row--2">
-            <div class="field"><label for="c-name">Name</label><input id="c-name" type="text" required></div>
-            <div class="field"><label for="c-phone">Phone</label><input id="c-phone" type="tel" required></div>
+            <div class="field"><label for="c-name">Name</label><input id="c-name" type="text" required name="c-name"></div>
+            <div class="field"><label for="c-phone">Phone</label><input id="c-phone" type="tel" required name="c-phone"></div>
           </div>
           <div class="field"><label for="c-type">Session type</label>
-            <select id="c-type" required>
+            <select id="c-type" required name="c-type">
               <option>Private lesson</option>
               <option>Private court lesson (at my court)</option>
               <option>Semi-private / group (up to 4)</option>
@@ -144,7 +148,7 @@
               <option>Beginner intro</option>
             </select>
           </div>
-          <div class="field"><label for="c-notes">What are you working on?</label><textarea id="c-notes" rows="3"></textarea></div>
+          <div class="field"><label for="c-notes">What are you working on?</label><textarea id="c-notes" rows="3" name="c-notes"></textarea></div>
           <button class="btn btn--primary btn--lg" type="submit">Request a Lesson</button>
           <p class="form__note">Or skip the form: call or text (360) 605-0634.</p>
         </form>

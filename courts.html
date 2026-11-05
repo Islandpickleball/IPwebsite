@@ -117,14 +117,18 @@
         <p class="kicker">Start your project</p>
         <h2 style="font-size: var(--text-xl);">Request a consultation</h2>
         <p class="lede" style="margin-inline: auto; margin-bottom: var(--space-8);">Tell us what you have in mind — we'll walk the site, talk options, and give you a clear estimate.</p>
-        <form class="form" data-proto style="margin-inline: auto; text-align: left;">
-          <div class="form__success" role="status"><strong>Prototype note:</strong> on the live site this connects to your email or form tool and routes straight to David's phone.</div>
+        <form class="form" data-service="court" style="margin-inline: auto; text-align: left;">
+          <div class="form__pending" role="status">Sending…</div>
+          <div class="form__success" role="status">Thanks — we got your project details and will call you to talk it through. Want to speed things up? Call or text (360) 605-0634.</div>
+          <div class="form__error" role="alert">Something went wrong sending your details — please try again, or call or text (360) 605-0634.</div>
+          <div class="form__unconfigured" role="alert">This form isn't connected yet — we're finishing setup. Call or text (360) 605-0634 for the fastest project quote.</div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
           <div class="form__row form__row--2">
-            <div class="field"><label for="q-name">Name</label><input id="q-name" type="text" required></div>
-            <div class="field"><label for="q-phone">Phone or email</label><input id="q-phone" type="text" required></div>
+            <div class="field"><label for="q-name">Name</label><input id="q-name" type="text" required name="q-name"></div>
+            <div class="field"><label for="q-phone">Phone or email</label><input id="q-phone" type="text" required name="q-phone"></div>
           </div>
-          <div class="field"><label for="q-loc">Island / location</label><input id="q-loc" type="text" required></div>
-          <div class="field"><label for="q-desc">Tell us about the project</label><textarea id="q-desc" rows="4" required></textarea></div>
+          <div class="field"><label for="q-loc">Island / location</label><input id="q-loc" type="text" required name="q-loc"></div>
+          <div class="field"><label for="q-desc">Tell us about the project</label><textarea id="q-desc" rows="4" required name="q-desc"></textarea></div>
           <button class="btn btn--primary btn--lg" type="submit">Request a Consultation</button>
           <p class="form__note">Prefer to talk? Call or text David directly at (360) 605-0634 — court clients usually do.</p>
         </form>

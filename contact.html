@@ -122,13 +122,17 @@
         <div class="stack">
           <p class="kicker">Send a note</p>
           <h2 style="font-size: var(--text-xl);">General inquiries</h2>
-          <form class="form" data-proto>
-            <div class="form__success" role="status"><strong>Prototype note:</strong> connects to your email or form tool on the live site.</div>
+          <form class="form" data-service="contact">
+            <div class="form__pending" role="status">Sending…</div>
+          <div class="form__success" role="status">Thanks — your note is in. We reply within a day or two; need us sooner? Call or text (360) 605-0634.</div>
+          <div class="form__error" role="alert">Something went wrong sending your note — please try again, or call or text (360) 605-0634.</div>
+          <div class="form__unconfigured" role="alert">This form isn't connected yet — we're finishing setup. Call or text (360) 605-0634 or email info@islandpickleball.org and we'll take care of you directly.</div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
             <div class="form__row form__row--2">
-              <div class="field"><label for="k-name">Name</label><input id="k-name" type="text" required></div>
-              <div class="field"><label for="k-email">Email</label><input id="k-email" type="email" required></div>
+              <div class="field"><label for="k-name">Name</label><input id="k-name" type="text" required name="k-name"></div>
+              <div class="field"><label for="k-email">Email</label><input id="k-email" type="email" required name="k-email"></div>
             </div>
-            <div class="field"><label for="k-msg">Message</label><textarea id="k-msg" rows="5" required></textarea></div>
+            <div class="field"><label for="k-msg">Message</label><textarea id="k-msg" rows="5" required name="k-msg"></textarea></div>
             <button class="btn btn--primary btn--lg" type="submit">Send</button>
           </form>
         </div>

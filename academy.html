@@ -216,7 +216,7 @@
     </section>
 
     <!-- FOR PARENTS -->
-    <section class="section">
+    <section class="section" id="parents">
       <div class="container split">
         <div class="stack">
           <p class="kicker">For parents & families</p>
@@ -247,10 +247,12 @@
           <h2 style="font-size: var(--text-xl);">Save a spot in the crew</h2>
           <p class="lede" style="margin-inline: auto;">Registration opens with a 48-hour early-access window for returning families and waitlist members, then opens to the public.</p>
         </div>
-        <form class="form" data-proto style="margin-inline: auto;">
-          <div class="form__success" role="status">
-            <strong>Prototype note:</strong> in the live site, this form connects to your registration and payment tools — and step one is the Parent & Spectator Code of Conduct, which every parent must read and e-sign before their child can register.
-          </div>
+        <form class="form" data-service="academy" style="margin-inline: auto;">
+          <div class="form__pending" role="status">Sending…</div>
+          <div class="form__success" role="status">Registration received — complete payment below to lock in your spot.</div>
+          <div class="form__error" role="alert">Something went wrong sending the registration — please try again, or call or text (360) 605-0634.</div>
+          <div class="form__unconfigured" role="alert">Online registration isn't connected yet — we're finishing setup. Call or text (360) 605-0634 to register directly.</div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
           <div class="form__row form__row--2">
             <div class="field">
               <label for="parent-name">Parent / guardian name</label>
@@ -279,9 +281,29 @@
               <option value="waitlist">Waitlist — notify me when a spot opens</option>
             </select>
           </div>
+          <div class="conduct">
+            <p class="conduct__title">Parent & Spectator Code of Conduct</p>
+            <p class="conduct__text">Every registering parent or guardian must read and agree to the code of conduct before their child's registration is complete. The summary is in the <a href="#parents">For parents</a> section above — the full policy arrives with your welcome email.</p>
+            <label class="check">
+              <input type="checkbox" name="conduct-agree" required>
+              <span>I have read and agree to the Island Pickleball Academy Parent & Spectator Code of Conduct.</span>
+            </label>
+            <div class="field">
+              <label for="conduct-signature">Typed signature (parent / guardian)</label>
+              <input id="conduct-signature" name="conduct-signature" type="text" required>
+            </div>
+            <input type="hidden" name="conduct-date" value="">
+          </div>
           <button class="btn btn--primary btn--lg" type="submit">Request a Spot</button>
           <p class="form__note">Questions first? Call or text David at (360) 605-0634. Every player needs a signed liability waiver and media release (opt-in) on file before their first session.</p>
         </form>
+        <div class="academy-payment" id="academy-payment" data-show="false">
+          <p class="kicker">Step two — payment</p>
+          <h3>Lock in your spot</h3>
+          <p>Your registration is in — payment completes it. Spots are held for 48 hours after we receive your registration.</p>
+          <a class="btn btn--accent btn--lg payment__btn" data-show="false" href="#" rel="noopener noreferrer" target="_blank">Pay now</a>
+          <p class="payment__fallback" data-show="true">We'll email you a secure payment link within 24 hours — your spot is held for 48 hours while that's in motion.</p>
+        </div>
       </div>
     </section>
   </main>

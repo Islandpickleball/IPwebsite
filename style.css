@@ -1176,3 +1176,127 @@ h1, h2, h3 {
   color: var(--color-text-muted);
   padding: var(--space-2) var(--space-1) 0;
 }
+
+/* ============ Form engine states ============ */
+
+.form__pending,
+.form__error,
+.form__unconfigured {
+  display: none;
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  font-size: var(--text-base);
+}
+
+.form__pending {
+  background: var(--color-surface-offset);
+  color: var(--color-text-muted);
+}
+
+.form__error {
+  background: #fbe9e2;
+  border: 1px solid #c05621;
+}
+
+.form__unconfigured {
+  background: var(--color-accent-soft);
+  border: 1px solid var(--color-accent-deep);
+}
+
+.form__pending[data-show='true'],
+.form__error[data-show='true'],
+.form__unconfigured[data-show='true'] {
+  display: block;
+}
+
+/* ============ Academy conduct gate & payment ============ */
+
+.conduct {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  background: var(--color-surface);
+  display: grid;
+  gap: var(--space-4);
+}
+
+.conduct__title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.conduct__text {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.check {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  font-size: var(--text-sm);
+}
+
+.check input {
+  margin-top: 4px;
+  width: auto;
+  flex: none;
+}
+
+.academy-payment {
+  display: none;
+  margin-top: var(--space-8);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  background: var(--color-surface);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.academy-payment[data-show='true'] {
+  display: block;
+}
+
+.academy-payment h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-2);
+}
+
+.academy-payment p {
+  margin-inline: auto;
+}
+
+.academy-payment .payment__btn {
+  margin-top: var(--space-6);
+}
+
+.academy-payment .payment__btn[data-show='false'] {
+  display: none;
+}
+
+.academy-payment .payment__fallback {
+  display: none;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-top: var(--space-5);
+}
+
+.academy-payment .payment__fallback[data-show='true'] {
+  display: block;
+}
+
+/* Visually hidden but available to assistive tech / form engines */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

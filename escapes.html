@@ -95,21 +95,25 @@
         <p class="kicker">The interest list</p>
         <h2 style="font-size: var(--text-xl);">Join the interest list</h2>
         <p class="lede" style="margin-inline: auto; margin-bottom: var(--space-8);">Interest-list members hear first when dates, venues, and pricing are confirmed — and get first shot at the limited spots.</p>
-        <form class="form" data-proto style="margin-inline: auto; text-align: left;">
-          <div class="form__success" role="status"><strong>Prototype note:</strong> connects to your email tool; interest tag: escapes. This list is what validates the pilot.</div>
+        <form class="form" data-service="escapes" style="margin-inline: auto; text-align: left;">
+          <div class="form__pending" role="status">Sending…</div>
+          <div class="form__success" role="status">You're on the interest list — you'll hear from us the moment there's something real to book.</div>
+          <div class="form__error" role="alert">Something went wrong — please try again, or email info@islandpickleball.org.</div>
+          <div class="form__unconfigured" role="alert">This form isn't connected yet — we're finishing setup. Email info@islandpickleball.org to join the list.</div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
           <div class="form__row form__row--2">
-            <div class="field"><label for="e-name">Name</label><input id="e-name" type="text" required></div>
-            <div class="field"><label for="e-email">Email</label><input id="e-email" type="email" required></div>
+            <div class="field"><label for="e-name">Name</label><input id="e-name" type="text" required name="e-name"></div>
+            <div class="field"><label for="e-email">Email</label><input id="e-email" type="email" required name="e-email"></div>
           </div>
           <div class="field"><label for="e-level">Your comfort level on court</label>
-            <select id="e-level" required>
+            <select id="e-level" required name="e-level">
               <option>Newer player — still building fundamentals</option>
               <option>Comfortable in recreational games</option>
               <option>Club / league regular</option>
               <option>Tournament competitor</option>
             </select>
           </div>
-          <div class="field"><label for="e-travel">What kind of trip interests you most?</label><textarea id="e-travel" rows="3" placeholder="Destination ideas, trip length, who you'd bring…"></textarea></div>
+          <div class="field"><label for="e-travel">What kind of trip interests you most?</label><textarea id="e-travel" rows="3" placeholder="Destination ideas, trip length, who you'd bring…" name="e-travel"></textarea></div>
           <button class="btn btn--accent btn--lg" type="submit">Join the Interest List</button>
           <p class="form__note" style="color: color-mix(in oklab, var(--color-text-inverse) 65%, transparent);">No spam, no fake scarcity — just a note when there's something real to book.</p>
         </form>
