@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Island Pickleball — San Juan Islands, WA</title>
+  <meta name="description" content="Island Pickleball — courts, coaching, youth academy, tournaments, and getaways in the San Juan Islands.">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.svg">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="./index.html">
+        <svg class="brand__mark" width="34" height="34" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="14.5" fill="var(--color-accent)"/>
+          <circle cx="16" cy="16" r="14.5" fill="none" stroke="var(--color-primary)" stroke-width="1.4"/>
+          <circle cx="11" cy="11" r="1.7" fill="var(--color-primary)"/>
+          <circle cx="21" cy="11" r="1.7" fill="var(--color-primary)"/>
+          <circle cx="16" cy="16" r="1.7" fill="var(--color-primary)"/>
+          <circle cx="11" cy="21" r="1.7" fill="var(--color-primary)"/>
+          <circle cx="21" cy="21" r="1.7" fill="var(--color-primary)"/>
+        </svg>
+        <span class="brand__name">Island Pickleball<small>San Juan Islands, WA</small></span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list" role="list">
+          <li><a class="nav__link" href="courts.html">Courts</a></li>
+          <li><a class="nav__link" href="academy.html">Academy</a></li>
+          <li><a class="nav__link" href="coaching.html">Coaching</a></li>
+          <li><a class="nav__link" href="tournaments.html">Tournaments</a></li>
+          <li><a class="nav__link" href="escapes.html">Escapes</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="contact.html" aria-current="page">Contact</a></li>
+          <li><a class="btn btn--accent nav__cta" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="burger" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="container mobile-nav" data-open="false">
+      <ul class="mobile-nav__list" role="list">
+        <li><a class="mobile-nav__link" href="courts.html">Courts</a></li>
+        <li><a class="mobile-nav__link" href="academy.html">Academy</a></li>
+        <li><a class="mobile-nav__link" href="coaching.html">Coaching</a></li>
+        <li><a class="mobile-nav__link" href="tournaments.html">Tournaments</a></li>
+        <li><a class="mobile-nav__link" href="escapes.html">Escapes</a></li>
+        <li><a class="mobile-nav__link" href="about.html">About</a></li>
+        <li><a class="mobile-nav__link" href="contact.html" aria-current="page">Contact</a></li>
+        <li><a class="mobile-nav__link" href="./contact.html"><strong>Contact</strong></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker">Contact</p>
+        <h1 class="page-hero__title">Let's talk pickleball</h1>
+        <p class="page-hero__lede">Lessons, court quotes, academy questions, tournaments, or escapes — reach the right door fast.</p>
+      </div>
+    </section>
+
+    <section class="section" id="routes">
+      <div class="container stack stack--lg">
+        <div>
+          <p class="kicker">The fastest route</p>
+          <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-2);">What can we help with?</h2>
+          <p class="lede">Call or text is fastest — David answers the same number for everything. Or pick your door below.</p>
+        </div>
+        <div class="grid-2">
+          <a class="door" href="./coaching.html">
+            <span class="door__title">I want a lesson</span>
+            <span class="door__desc">Private, semi-private, group, or Three-and-Me. See rates and book.</span>
+            <span class="door__action">Coaching →</span>
+          </a>
+          <a class="door" href="./courts.html#quote">
+            <span class="door__title">I need a court built or refreshed</span>
+            <span class="door__desc">Quotes, timelines, and site visits — start with a conversation.</span>
+            <span class="door__action">Courts →</span>
+          </a>
+          <a class="door" href="./academy.html">
+            <span class="door__title">My child wants to play</span>
+            <span class="door__desc">Academy registration, waitlist, and parent questions.</span>
+            <span class="door__action">Academy →</span>
+          </a>
+          <a class="door" href="./tournaments.html">
+            <span class="door__title">I want to compete or sponsor</span>
+            <span class="door__desc">Event info, registration, and sponsorship for island events.</span>
+            <span class="door__action">Tournaments →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--offset">
+      <div class="container split">
+        <div class="stack">
+          <p class="kicker">Direct lines</p>
+          <figure class="photo" style="max-width: 220px;">
+            <img src="./images/islandpickleball-qr.png" alt="QR code linking to islandpickleball.org" style="aspect-ratio: 1/1; background: #fff; padding: var(--space-3);">
+            <figcaption>Scan to share Island Pickleball — flyers, court signs, and event handouts.</figcaption>
+          </figure>
+          <h2 style="font-size: var(--text-xl);">Call, text, or write</h2>
+          <div class="table-wrap">
+            <table class="table">
+              <tbody>
+                <tr><td><strong>Phone / text</strong></td><td><a href="tel:+13606050634">(360) 605-0634</a></td></tr>
+                <tr><td><strong>Email</strong></td><td><a href="mailto:info@islandpickleball.org">info@islandpickleball.org</a></td></tr>
+                <tr><td><strong>Where</strong></td><td>San Juan Islands, Washington</td></tr>
+                <tr><td><strong>Lessons</strong></td><td>Public island courts, and private courts by arrangement</td></tr>
+                <tr><td><strong>Academy</strong></td><td>San Juan Island Fairgrounds indoor facility, Friday Harbor</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="stack">
+          <p class="kicker">Send a note</p>
+          <h2 style="font-size: var(--text-xl);">General inquiries</h2>
+          <form class="form" data-proto>
+            <div class="form__success" role="status"><strong>Prototype note:</strong> connects to your email or form tool on the live site.</div>
+            <div class="form__row form__row--2">
+              <div class="field"><label for="k-name">Name</label><input id="k-name" type="text" required></div>
+              <div class="field"><label for="k-email">Email</label><input id="k-email" type="email" required></div>
+            </div>
+            <div class="field"><label for="k-msg">Message</label><textarea id="k-msg" rows="5" required></textarea></div>
+            <button class="btn btn--primary btn--lg" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand-name">Island Pickleball</p>
+          <p class="footer__motto">Play hard. Be kind.</p>
+          <p style="font-size: var(--text-sm); margin-top: var(--space-4);">San Juan Islands, Washington</p>
+        </div>
+        <div>
+          <h3>Programs</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="./courts.html">Courts</a></li>
+            <li><a href="./academy.html">Academy</a></li>
+            <li><a href="./coaching.html">Coaching</a></li>
+            <li><a href="./tournaments.html">Tournaments</a></li>
+            <li><a href="./escapes.html">Escapes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="tel:+13606050634">Call or text (360) 605-0634</a></li>
+            <li><a href="mailto:info@islandpickleball.org">info@islandpickleball.org</a></li>
+            <li><a href="./contact.html">Contact page</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Safe & verified</h3>
+          <ul class="footer__links" role="list">
+            <li>PPR Certified Coach</li>
+            <li>Background-checked annually</li>
+            <li>National Sports ID Verified</li>
+            <li>USA Pickleball member</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© Island Pickleball. All rights reserved.</span>
+        <span>Courts built for better play.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
